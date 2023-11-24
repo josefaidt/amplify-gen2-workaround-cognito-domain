@@ -12,7 +12,7 @@ const namespace = backend.resources.auth.node.tryGetContext(
   'amplify-backend-namespace'
 )
 
-backend.resources.auth.resources.userPool.addDomain('HostedUiDomain', {
+backend.resources.auth.resources.userPool.addDomain('CognitoDomain', {
   cognitoDomain: {
     domainPrefix: `${namespace}-${whoami}`, // change this
   },
